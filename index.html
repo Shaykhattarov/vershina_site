@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СК Вершина</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="css/lightgallery.min.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <h3 class="col-2 text-start">Вершина</h3>
+                <div class="col-8 align-self-center">
+                    <div class="row justify-content-center text-center">
+                        <a href="#section-2" class="col nav-btn">о компании</a>
+                        <a href="#section-3" class="col nav-btn">виды домов</a>
+                        <a href="#section-4" class="col nav-btn">варианты оплаты</a>
+                        <a href="#section-5" class="col nav-btn">наши проекты</a>
+                        <a href="#section-6" class="col-2 nav-btn">контакты</a>      
+                    </div>
+                </div>
+                <div class="col text-end">
+                    <a href='#section-6' class="btn btn-dark btn-small text-uppercase btn-buy">Заказать проект</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main block start !-->
+    <main>
+        <!-- Section 1 start !-->
+        <section id="section-1">
+            <div class="container">
+                <div class="row">
+                    <h1 class="col-7 text-uppercase strt-header text-start color-black align-self-end">Строительство домов под ключ</h1>
+                    <div class="col-3 strt-description text-start align-self-end">Доверьтесь нам, и ваш <br> дом станет выражением <br> вашего стиля и комфорта</div>
+                </div>
+                <div class="row">
+                    <div class="col-10 strt-image-wrap">
+                        <img class="rounded" src="image/starter-image.jpeg" alt="" importance="high" width="100%"/>
+                    </div>
+                    <style>
+
+                    </style>
+                    <div class="col strt-circle-wrap align-self-end" >
+                        <div class="circle circle-border"></div>
+                        <div class="row circle circle-description text-uppercase">
+                            <a href="#section-5" style="text-decoration: none;"><div class="circle-text">Наши проекты</div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 1 end !-->
+
+        <!-- Section 2 start !-->
+        <section id="section-2">
+            <div class="container about-wrapper">
+                <div class="row section-header-wrapper">
+                    <span class="col section-header-text text-uppercase text-start">О компании</span>
+                </div>
+                <div class="row">
+                    <div class="col-4 about-description-wrapper">
+                        <span class="about-numeric-small-text">
+                            Доверьтесь нам, и ваш дом станет<br>
+                            выражением вашего стиля и комфорта. <br>
+                            Доверьтесь нам, и ваш дом станет<br> 
+                            выражением вашего стиля и комфорта.<br>  
+                            Доверьтесь нам, и ваш дом станет<br>
+                            выражением вашего стиля и комфорта.
+                        </span>
+                    </div>
+                    <div class="col about-numeric-wrapper text-start align-self-center">
+                        <div class="about-numeric-text text-uppercase">10 лет</div>
+                        <div class="about-numeric-small-text">опыта в строительстве</div>
+                    </div>
+                    <div class="col about-numeric-wrapper text-start align-self-center">
+                        <div class="about-numeric-text text-uppercase">150+</div>
+                        <div class="about-numeric-small-text">успешных проектов</div>
+                    </div>
+                    <div class="col about-numeric-wrapper text-start align-self-center">
+                        <div class="about-numeric-text text-uppercase">120 дней</div>
+                        <div class="about-numeric-small-text">на строительство дома</div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <!-- Section 2 end !-->
+
+        <!-- Section 3 start !-->
+        <section id="section-3">
+            <div class="container" id="hometype-element-container">
+                <div class="row section-header-wrapper">
+                    <span class="col section-header-text text-uppercase text-start">Виды домов</span>
+                </div>
+
+                <!-- Block !-->
+                <div class="row ht-row " id="hometype-element" style="padding-top: 0;">
+                    <div class="col">
+                        <div class="row">
+                            <button class="col-1 ht-glr-back" id="ht-left-arrow-1" onclick="define_gallery_event('left', 1);">
+                                <img src="image/arrow.svg">
+                            </button>
+                            <div class="col-9 d-flex ht-gallery-wrapper align-self-center text-center" id="ht-gallery-1">
+                                <img class="ht-gallery-item rounded" id="ht-item" src="image/hometype-1.png" width="100%">                       
+                                <img class="ht-gallery-item rounded deactivate" id="ht-item" src="image/hometype-2.png" width="100%">
+                            </div>
+                            <button class="col-1 ht-glr-next" id="ht-right-arrow-1" onclick="define_gallery_event('right', 1);">
+                                <img src="image/arrow.svg">
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 text-center"></div>
+                        </div>
+                    </div>
+                    <div class="col align-self-center">
+                        <div class="row">
+                            <div class="col text-start ht-header-text text-uppercase">Кирпичный дом</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8 ht-description-text">
+                                Доверьтесь нам, и ваш дом станет выражением
+                                вашего стиля и комфорта. Доверьтесь нам, и 
+                                ваш дом станет выражением вашего стиля и 
+                                комфорта. Доверьтесь нам, и ваш дом станет
+                                выражением вашего стиля и комфорта.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 ht-price-text border border-2 border-dark text-center text-uppercase">
+                                15.000 ₽ за кв.м
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block !-->
+                <div class="row ht-row d-flex flex-row-reverse" id="hometype-element">
+                    <div class="col">
+                        <div class="row">
+                            <button class="col-1 ht-glr-back" id="ht-left-arrow-2" onclick="define_gallery_event('left', 2);">
+                                <img src="image/arrow.svg">
+                            </button>
+                            <div class="col-9 d-flex ht-gallery-wrapper align-self-center text-center" id="ht-gallery-2">
+                                <img class="ht-gallery-item rounded" id="ht-item" src="image/hometype-1.png" width="100%">                       
+                                <img class="ht-gallery-item rounded deactivate" id="ht-item" src="image/hometype-2.png" width="100%">
+                            </div>
+                            <button class="col-1 ht-glr-next" id="ht-right-arrow-2" onclick="define_gallery_event('right', 2);">
+                                <img src="image/arrow.svg">
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 text-center"></div>
+                        </div>
+                    </div>
+
+                    <div class="col align-self-center">
+                        <div class="row">
+                            <div class="col text-start ht-header-text text-uppercase">Каркасный дом</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8 ht-description-text">
+                                Доверьтесь нам, и ваш дом станет выражением
+                                вашего стиля и комфорта. Доверьтесь нам, и 
+                                ваш дом станет выражением вашего стиля и 
+                                комфорта. Доверьтесь нам, и ваш дом станет
+                                выражением вашего стиля и комфорта.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 ht-price-text border border-2 border-dark text-center text-uppercase">
+                                20.000 ₽ за кв.м
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block !-->
+                <div class="row ht-row deactivate" id="hometype-element">
+                    <div class="col">
+                        <div class="row">
+                            <button class="col-1 ht-glr-back" id="ht-left-arrow-1" onclick="define_gallery_event('left', 1);">
+                                <img src="image/arrow.svg">
+                            </button>
+                            <div class="col-9 d-flex ht-gallery-wrapper align-self-center text-center" id="ht-gallery-1">
+                                <img class="ht-gallery-item rounded" id="ht-item" src="image/hometype-1.png" width="100%">                       
+                                <img class="ht-gallery-item rounded deactivate" id="ht-item" src="image/hometype-2.png" width="100%">
+                            </div>
+                            <button class="col-1 ht-glr-next" id="ht-right-arrow-1" onclick="define_gallery_event('right', 1);">
+                                <img src="image/arrow.svg">
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 text-center"></div>
+                        </div>
+                    </div>
+                    <div class="col align-self-center">
+                        <div class="row">
+                            <div class="col text-start ht-header-text text-uppercase">Кирпичный дом</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8 ht-description-text">
+                                Доверьтесь нам, и ваш дом станет выражением
+                                вашего стиля и комфорта. Доверьтесь нам, и 
+                                ваш дом станет выражением вашего стиля и 
+                                комфорта. Доверьтесь нам, и ваш дом станет
+                                выражением вашего стиля и комфорта.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 ht-price-text border border-2 border-dark text-center text-uppercase">
+                                15.000 ₽ за кв.м
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center" id="hometype-view-elements">
+                    <div class="d-flex ht-add-element-btn align-items-center justify-content-center" >
+                        <div class="ht-close align-self-center">
+                            <!-- + !-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 3 end !-->
+
+        <!-- Section 4 start !-->
+        <section id="section-4">
+            <div class="container">
+                <div class="row section-header-wrapper">
+                    <span class="col section-header-text text-uppercase text-start">Варианты оплаты</span>
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col pmnt-item-wrapper d-flex flex-column text-center">
+                        <div class="pmnt-item-icon align-self-center">
+                            <img src="image/payment-card.svg" height="100%">
+                        </div>
+                        <div class="pmnt-item-header text-uppercase">Ипoтека</div>
+                        <div class="pmnt-item-description">строим дома с использованием 
+                            сельской, военной, семейной,
+                            IT-ипотеки
+                        </div>
+                    </div>
+                    
+                    <div class="col pmnt-item-wrapper d-flex flex-column text-center">
+                        <div class="pmnt-item-icon align-self-center">
+                            <img src="image/stairs-icon.svg" height="100%">
+                        </div>
+                        <div class="pmnt-item-header text-uppercase">поэтапная оплата</div>
+                        <div class="pmnt-item-description">
+                            каждый этап строительства оплачивается поэтапно (фундамент, стены)
+                        </div>
+                    </div>
+
+                    <div class="col pmnt-item-wrapper d-flex flex-column text-center">
+                        <div class="pmnt-item-icon align-self-center">
+                            <img src="image/kolyaska.svg" height="100%">
+                        </div>
+                        <div class="pmnt-item-header text-uppercase">Материнский капитал</div>
+                        <div class="pmnt-item-description">
+                            мы аккредитованы во многих банках, можете использовать материнский капитал
+                        </div>
+                    </div>
+
+                    <div class="col pmnt-item-wrapper d-flex flex-column text-center">
+                        <div class="pmnt-item-icon align-self-center">
+                            <img src="image/trade-in.svg" height="100%">
+                        </div>
+                        <div class="pmnt-item-header text-uppercase">Trade-in</div>
+                        <div class="pmnt-item-description">
+                            вы можете обменять вашу квартиру на строительство будущего дома
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 4 end !-->
+
+        <!-- Section 5 start !-->
+        <section id="section-5">
+            <div class="container">
+                <div class="row section-header-wrapper">
+                    <span class="col section-header-text text-uppercase text-start">Наши проекты</span>
+                </div>
+
+                <div class="row d-flex flex-row">
+                    <button class="col-1 ht-glr-back" id="project-left-arrow">
+                        <img src="image/arrow.svg">
+                    </button>
+
+                    <!-- Gallery Items !-->
+                    <div id="gallery-buffer" class="deactivate">
+                        <div id="buffer-item">
+                            <div id="header">Каркасный дом</div>
+                            <div id="description">Площадь 162 м<sup>2</sup></div>
+                            <img src="image/our-project-2.png" alt="" id="image" />
+                        </div>
+                        <div id="buffer-item">
+                            <div id="header">Кирпичный дом</div>
+                            <div id="description">Площадь 190 м<sup>2</sup></div>
+                            <img src="image/our-project-1.png" alt="" id="image" />
+                        </div>
+                        <div id="buffer-item">
+                            <div id="header">Деревянный дом</div>
+                            <div id="description">Площадь 120 м<sup>2</sup></div>
+                            <img src="image/hometype-1.png" alt="" id="image" />
+                        </div>
+                        <div id="buffer-item">
+                            <div id="header">Баня</div>
+                            <div id="description">Площадь 67 м<sup>2</sup></div>
+                            <img src="image/hometype-2.png" alt="" id="image" />
+                        </div>
+                    </div>
+
+                    <div class="col-6 d-flex flex-column align-self-end">
+                        <div class="project-big-image">
+                            <img class="rounded" id="project-image" src="image/our-project-1.png">
+                        </div>
+                        <div class="project-header-text text-uppercase text-end" id="project-header">
+                            Каркасный дом
+                        </div>
+                        <div class="project-description-text align-self-end" id="project-description">
+                            Площадь 0 м<sup>2</sup>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex flex-column align-self-end">
+                        <div class="project-small-image align-self-end">
+                            <img class="rounded" id="project-small-image" src="image/our-project-1.png">
+                        </div>
+                        <div class="project-small-header-text text-uppercase text-end" id="project-small-header">
+                            Кирпичный дом
+                        </div>
+                        <div class="project-small-description-text text-end" id="project-small-description">
+                            Площадь 0 м<sup>2</sup>
+                        </div>
+                    </div>
+
+                    <button class="col-1 ht-glr-next" id="project-right-arrow">
+                        <img src="image/arrow.svg">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Section 5 end !-->
+
+        <!-- Section 6 start !-->
+        <section id="section-6">
+            <div class="container">
+                <div class="row d-flex flex-row">
+                    <div class="col-5">
+                        <div class="row contact-form-header-text text-uppercase">Заполните форму<br> и мы вам перезвоним!</div>
+                        <div class="row contact-form-description-text">Наш сотрудник перезвонит <br>вам в течении 24-ёх часов</div>
+                    </div>
+                    <div class="col">
+                        <form action="#">
+                            <div class="row contact-form-input-text">
+                                <input type="text" placeholder="Имя">
+                            </div>
+                            <div class="row contact-form-input-text">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            
+                            <div class="row contact-form-input-text">
+                                <input type="text" placeholder="Телефон">
+                            </div>
+    
+                            <div class="row contact-form-input-button d-flex justify-content-center">
+                                <input type="submit" class="text-uppercase" value="Отправить">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 6 end !-->
+    </main>
+    <!-- Main block end !-->
+
+    <!-- Footer start !-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-5 text-start">
+                    <div class="row ">
+                        <div class="col footer_header_text text-uppercase">Наш адрес:</div>
+                    </div>
+                    <div class="row footer_block_margin">
+                        <div class="col-1 text-center align-items-center justify-content-center">
+                            <img src="image/geo-icon.png" class="img-responsive" alt="Responsive image"/>
+                        </div>
+                        <div class="col-7 footer_description_text text-start text-uppercase">
+                            г. Ульяновск, Московское
+                            шоссе 13 этаж 2
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col footer_header_text text-uppercase">Номер телефона:</div>
+                    </div>
+                    <div class="row footer_block_margin">
+                        <div class="col-1 text-center align-items-center justify-content-center">
+                            <img src="image/phone-icon.png" class="img-responsive" alt="Responsive image"/>
+                        </div>
+                        <div class="col footer_description_text text-uppercase">+7 (903) 336 - 89 - 13</div>
+                    </div>
+                    <div class="row footer_header_text">
+                        <div class="col-1 ">
+                            <img src="image/whatsapp-icon.png" class="">
+                        </div>
+                        <div class="col-1">
+                            <img src="image/vk-icon.png" class="">
+                        </div>
+                        <div class="col-1">
+                            <img src="image/telegram-icon.png" class="">
+                        </div>   
+                    </div>
+                </div>
+                <div class="col text-end">
+                    <img src="image/image 171.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end !-->
+
+    <!-- Scripts start !-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Scripts end !-->
+</body>
+
+</html>

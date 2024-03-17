@@ -1,0 +1,546 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Catallina';
+    src: url('fonts/Catallina/Catallina.otf') format('truetype');
+}
+
+:root {
+    --color1: black; 
+}
+
+body {
+    font-family: 'Montserrat';
+    color: black;
+}
+
+header, footer, section {
+    padding: 50px 0;
+}
+
+.section-header-text {
+    font-family: 'Catallina';
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+    padding-bottom: 50px;
+}
+
+.deactivate {
+    display: none;
+}
+
+
+/** HEADER **/
+header {
+    padding-bottom: 0;
+}
+
+.btn-buy {
+    font-size: 0.8rem;
+    line-height: 1.7rem;
+    border-radius: 20px 20px;
+    transition: all 10s;
+}
+
+.btn-buy:hover {
+    text-decoration: underline;
+}
+
+.nav-btn {
+    font-weight: 400;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+/** SECTION 1. START BLOCK **/
+
+.strt-header {
+    font-family: 'Catallina';
+    font-size: 4.7rem;
+    color: black;
+    margin-right: 50px;
+}
+
+.strt-description {
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+}
+
+.strt-image-wrap {
+    height: 500px;
+    overflow: hidden;
+}
+
+.strt-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0px -30px;
+}
+
+.strt-projects-icon-wrap {
+    position: relative;
+}
+
+.strt-circle-wrap {
+    width: 100%;
+    height: 160px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    width: 160px;
+    height: 160px; 
+}
+
+.circle-border {
+    border: 2px solid black;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.circle-description {
+    font-family: 'Montserrat';
+    font-size: 1.1rem;
+    background-color: white;
+    width: 160px;
+    height: fit-content;
+}
+
+.circle-description {
+    top: 53px;
+    right: 80px;
+    font-family: 'Catallina';
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+}
+.circle-description div {
+    width: 120px;
+    text-align: center;
+}
+
+.circle-description img {
+    width: fit-content;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.circle-text {
+    transition: 0.8s all;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+
+.circle-text:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;   
+}
+
+
+/** SECTION 2. ABOUT COMPANY **/
+
+.about-numeric-wrapper {
+    margin-left: 50px;
+}
+
+.about-numeric-text {
+    font-family: 'Catallina';
+    font-weight: 400;
+    font-size: 2.7rem;
+}
+
+.about-numeric-small-text {
+    font-size: 1rem;
+}
+
+
+/** SECTION 3. HOME TYPES **/
+
+.ht-row {
+    padding: 50px 0;
+}
+
+.ht-glr-back{
+    border: 1px solid white;
+    background-color: white;  
+    transition: 0.5s all;
+}
+
+.ht-glr-back:hover {
+    background-color: rgb(202, 202, 202);
+    border-color: rgba(202, 202, 202, 0.732);
+}
+
+.ht-glr-next {
+    border: 1px solid white;
+    background-color: white;  
+    transition: 0.5s all;
+    transform: rotate(180deg);
+}
+
+.ht-glr-next:hover {
+    background-color: rgb(202, 202, 202);
+    border-color: rgba(202, 202, 202, 0.732);
+}
+
+.ht-header-text {
+    font-family: 'Catallina';
+    font-size: 1.8rem;
+    line-height: 3rem;
+    padding-bottom: 30px;
+}
+
+.ht-description-text {
+    padding-bottom: 30px;
+}
+
+.ht-price-text {
+    font-family: 'Catallina';
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 2.5rem;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.ht-gallery-wrapper {
+    width: 500px;
+    height: 280px;
+}
+
+.ht-close {
+    width: 23px;
+    height: 23px;
+    --weight: 0.1px;
+    --aa: 1px; /* anti-aliasing */
+    --color: black;
+    transition: all 0.1s;
+
+  background:
+    linear-gradient(0deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa))),
+    linear-gradient(-90deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa)));
+}
+
+.ht-add-element-btn {
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0;
+    transition: all 0.1s ;
+}
+
+.ht-add-element-btn:hover {
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.ht-add-element-btn:hover .ht-close {
+    cursor: pointer;
+    --weight: 0.3px;
+    background:
+        linear-gradient(0deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa))),
+        linear-gradient(-90deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa)));
+}
+
+
+/** SECTION 4. PAYMENT TYPE **/
+
+.pmnt-item-wrapper {
+    border: 2px solid black;
+    border-radius: 20px 20px;
+    padding-top: 40px;
+    margin: 0 20px;
+}
+
+.pmnt-item-icon {
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.pmnt-item-header {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 2.8rem;
+}
+
+.pmnt-item-description {
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-bottom: 35px;
+}
+
+
+/** SECTION 5. OUR PROJECTS **/
+
+.project-big-image {
+    width: 640px;
+    height: 440px;
+}
+
+.project-big-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px;
+    overflow: hidden;
+}
+
+.project-header-text {
+    font-family: 'Catallina';
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.project-small-image {
+    width: 375px;
+    height: 240px;
+}
+
+.project-small-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px;
+
+}
+
+.project-small-header-text {
+    font-family: 'Catallina';
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.project-small-description-text {
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+}
+
+.project-glr-back{
+    border: 1px solid white;
+    background-color: white;  
+    transition: 0.5s all;
+}
+
+.project-glr-back:hover {
+    background-color: rgb(202, 202, 202);
+    border-color: rgba(202, 202, 202, 0.732);
+}
+
+.project-glr-next {
+    border: 1px solid white;
+    background-color: white;  
+    transition: 0.5s all;
+    transform: rotate(180deg);
+}
+
+.project-glr-next:hover {
+    background-color: rgb(202, 202, 202);
+    border-color: rgba(202, 202, 202, 0.732);
+}
+
+/** SECTION 6. CONTACT FORM **/
+
+.contact-form-header-text {
+    font-family: 'Catallina';
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding: 20px 0;
+}
+
+.contact-form-description-text {
+    line-height: 1.25rem;
+}
+
+.contact-form-input-text {
+    padding-bottom: 30px;
+}
+
+.contact-form-input-text input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 6px 6px;
+    padding-left: 30px;
+    font-size: 1.25rem;
+}
+
+.contact-form-input-button {
+    width: 100%;
+
+}
+
+.contact-form-input-button input{
+    width: fit-content;
+    height: 50px;
+    font-size: 0.95rem;
+    color: white;
+    background-color: black;
+
+    padding: 0 40px;
+    border: 1px solid black;
+    border-radius: 25px 25px;
+}
+
+
+/** FOOTER **/
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.footer_header_text {
+    font-family: 'Catallina';
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.footer_description_text {
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer_block_margin {
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+    section {
+        padding-bottom: 50px;
+    }
+
+    .section-header-text {
+        font-size: 2.6rem;
+        font-weight: 400;
+        line-height: 2.7rem;
+        padding-bottom: 40px;
+    }
+
+    /** HEADER **/
+    .nav-btn {
+        font-size: 0.9rem;
+    }
+
+    /** SECTION 1 **/
+
+    .strt-header {
+        font-size: 4rem;
+    }
+    .strt-description {
+        font-size: 1rem;
+    }
+    .strt-circle-wrap {
+        width: 100%;
+        height: 140px;
+    }
+    .circle {
+        width: 140px;
+        height: 140px;
+    }
+    .circle-description {
+        height: fit-content;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        top: 43px;
+        right: 60px;
+    }
+    .circle-description div {
+        width: 100px;
+    }
+
+    /** SECTION 2 **/
+
+    .about-numeric-text {
+        font-size: 2.3rem;
+    }
+    .about-numeric-small-text {
+        font-size: 0.9rem;
+    }
+    
+    /** SECTION 3 **/
+
+    .ht-row {
+        padding: 30px 0;
+    }
+    .ht-description-text {
+        font-size: 0.9rem;
+    }
+    .ht-price-text {
+        font-size: 0.8rem;
+    }
+    .ht-gallery-wrapper {
+        width: 450px;
+        height: 270px;
+    }
+    .ht-add-element-btn {
+        width: 60px;
+        height: 60px;
+    }
+    .ht-close {
+        width: 20px;
+        height: 20px;
+    }
+
+    /** SECTION 4 **/
+    .pmnt-item-icon {
+        margin-bottom: 30px;
+    }
+    .pmnt-item-header {
+        font-size: 1rem;
+        line-height: 1.8rem;
+        margin-bottom: 10px;
+    }
+    .pmnt-item-description {
+        font-size: 0.8rem;
+    }
+
+    /** SECTION 5 **/ 
+
+    .project-big-image {
+        width: 100%;
+        height: 400px;
+        
+    }
+    .project-small-image {
+        width: 100%;
+        height: 230px;
+        padding-left: 20px;
+    }
+    .project-header-text {
+        font-size: 1.3rem;
+    }
+    .project-small-header-text {
+        font-size: 1.1rem;
+    }
+    .project-description {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
