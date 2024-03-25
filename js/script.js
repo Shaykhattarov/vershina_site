@@ -1,3 +1,11 @@
+/** HEADER. BURGER MENU (adaptive) **/
+
+const burger_bar = document.getElementById('burger-bar');
+
+burger_bar.addEventListener('click', function() {
+    
+});
+
 
 /** SECTION 3. Types of houses **/
 
@@ -7,10 +15,11 @@ let hometype_index = 2; // Number of viewing blocks
 
 hometype_view_elements_button.addEventListener('click', function () {
 
-    /** Получаем все элементы контейнера, после чего получаем количество отображаемых блоков. 
+    /** 
+        Получаем все элементы контейнера, после чего получаем количество отображаемых блоков. 
         И добавляем к этому количеству еще два блока,
         Если все блоки отображены убираем кнопку.
-        **/
+    **/
     let buffer = Array.from(hometype_element_container.children);
     let container = [];
     let active = true;
@@ -50,7 +59,7 @@ function define_gallery_event(type, id) {
 
         if (active_old_index == 0) {
             items[items.length - 1].classList.remove("deactivate");
-            console.log(items[items.length - 1]);
+            //console.log(items[items.length - 1]);
         }
         else {
             items[active_old_index - 1].classList.remove("deactivate");

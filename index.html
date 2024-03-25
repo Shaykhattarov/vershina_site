@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
 </head>
 <body>
+    <style>
+
+    </style>
     <header>
         <div class="container">
             <div class="row">
-                <h3 class="col-2 text-start">Вершина</h3>
-                <div class="col-8 align-self-center">
-                    <div class="row justify-content-center text-center">
+                <h3 class="col-2 text-center text-lg-start">Вершина</h3>
+                <div class="col-8 align-self-center d-none d-lg-flex">
+                    <div class="row justify-content-center text-center nav-menu">
                         <a href="#section-2" class="col nav-btn">о компании</a>
                         <a href="#section-3" class="col nav-btn">виды домов</a>
                         <a href="#section-4" class="col nav-btn">варианты оплаты</a>
@@ -22,8 +25,13 @@
                         <a href="#section-6" class="col-2 nav-btn">контакты</a>      
                     </div>
                 </div>
-                <div class="col text-end">
+                <div class="col text-end d-none d-lg-flex">
                     <a href='#section-6' class="btn btn-dark btn-small text-uppercase btn-buy">Заказать проект</a>
+                </div>
+                <div class="col text-end nav-burger-menu-icon-wrap d-lg-none">
+                    <button class="nav-burger-menu-icon-button" id="burger-bar">
+                        <img src="image/burger-bar.png">
+                    </button>
                 </div>
             </div>
         </div>
@@ -33,8 +41,8 @@
     <main>
         <!-- Section 1 start !-->
         <section id="section-1">
-            <div class="container">
-                <div class="row">
+            <div class="container strt-container">
+                <div class="row strt-header-wrapper">
                     <h1 class="col-7 text-uppercase strt-header text-start color-black align-self-end">Строительство домов под ключ</h1>
                     <div class="col-3 strt-description text-start align-self-end">Доверьтесь нам, и ваш <br> дом станет выражением <br> вашего стиля и комфорта</div>
                 </div>
@@ -42,9 +50,6 @@
                     <div class="col-10 strt-image-wrap">
                         <img class="rounded" src="image/starter-image.jpeg" alt="" importance="high" width="100%"/>
                     </div>
-                    <style>
-
-                    </style>
                     <div class="col strt-circle-wrap align-self-end" >
                         <div class="circle circle-border"></div>
                         <div class="row circle circle-description text-uppercase">
@@ -62,8 +67,8 @@
                 <div class="row section-header-wrapper">
                     <span class="col section-header-text text-uppercase text-start">О компании</span>
                 </div>
-                <div class="row">
-                    <div class="col-4 about-description-wrapper">
+                <div class="row about-text-wrapper">
+                    <div class="col-5 about-description-wrapper">
                         <span class="about-numeric-small-text">
                             Доверьтесь нам, и ваш дом станет<br>
                             выражением вашего стиля и комфорта. <br>
@@ -74,16 +79,16 @@
                         </span>
                     </div>
                     <div class="col about-numeric-wrapper text-start align-self-center">
-                        <div class="about-numeric-text text-uppercase">10 лет</div>
-                        <div class="about-numeric-small-text">опыта в строительстве</div>
+                        <div class="about-numeric-text text-uppercase ">10 лет</div>
+                        <div class="about-numeric-small-text ">опыта в строительстве</div>
                     </div>
                     <div class="col about-numeric-wrapper text-start align-self-center">
-                        <div class="about-numeric-text text-uppercase">150+</div>
-                        <div class="about-numeric-small-text">успешных проектов</div>
+                        <div class="about-numeric-text text-uppercase ">150+</div>
+                        <div class="about-numeric-small-text ">успешных проектов</div>
                     </div>
                     <div class="col about-numeric-wrapper text-start align-self-center">
-                        <div class="about-numeric-text text-uppercase">120 дней</div>
-                        <div class="about-numeric-small-text">на строительство дома</div>
+                        <div class="about-numeric-text text-uppercase ">120 дней</div>
+                        <div class="about-numeric-small-text ">на строительство дома</div>
                     </div>
                 </div> 
             </div>
@@ -98,9 +103,9 @@
                 </div>
 
                 <!-- Block !-->
-                <div class="row ht-row " id="hometype-element" style="padding-top: 0;">
+                <div class="row ht-row flex-column-reverse flex-lg-row" id="hometype-element" style="padding-top: 0;">
                     <div class="col">
-                        <div class="row">
+                        <div class="row hometype-gallery-wrapper">
                             <button class="col-1 ht-glr-back" id="ht-left-arrow-1" onclick="define_gallery_event('left', 1);">
                                 <img src="image/arrow.svg">
                             </button>
@@ -138,9 +143,9 @@
                 </div>
 
                 <!-- Block !-->
-                <div class="row ht-row d-flex flex-row-reverse" id="hometype-element">
+                <div class="row ht-row d-flex flex-column-reverse flex-lg-row-reverse" id="hometype-element">
                     <div class="col">
-                        <div class="row">
+                        <div class="row hometype-gallery-wrapper">
                             <button class="col-1 ht-glr-back" id="ht-left-arrow-2" onclick="define_gallery_event('left', 2);">
                                 <img src="image/arrow.svg">
                             </button>
@@ -178,46 +183,6 @@
                     </div>
                 </div>
 
-                <!-- Block !-->
-                <div class="row ht-row deactivate" id="hometype-element">
-                    <div class="col">
-                        <div class="row">
-                            <button class="col-1 ht-glr-back" id="ht-left-arrow-1" onclick="define_gallery_event('left', 1);">
-                                <img src="image/arrow.svg">
-                            </button>
-                            <div class="col-9 d-flex ht-gallery-wrapper align-self-center text-center" id="ht-gallery-1">
-                                <img class="ht-gallery-item rounded" id="ht-item" src="image/hometype-1.png" width="100%">                       
-                                <img class="ht-gallery-item rounded deactivate" id="ht-item" src="image/hometype-2.png" width="100%">
-                            </div>
-                            <button class="col-1 ht-glr-next" id="ht-right-arrow-1" onclick="define_gallery_event('right', 1);">
-                                <img src="image/arrow.svg">
-                            </button>
-                        </div>
-                        <div class="row">
-                            <div class="col-10 text-center"></div>
-                        </div>
-                    </div>
-                    <div class="col align-self-center">
-                        <div class="row">
-                            <div class="col text-start ht-header-text text-uppercase">Кирпичный дом</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-8 ht-description-text">
-                                Доверьтесь нам, и ваш дом станет выражением
-                                вашего стиля и комфорта. Доверьтесь нам, и 
-                                ваш дом станет выражением вашего стиля и 
-                                комфорта. Доверьтесь нам, и ваш дом станет
-                                выражением вашего стиля и комфорта.
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-3 ht-price-text border border-2 border-dark text-center text-uppercase">
-                                15.000 ₽ за кв.м
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="row justify-content-center" id="hometype-view-elements">
                     <div class="d-flex ht-add-element-btn align-items-center justify-content-center" >
                         <div class="ht-close align-self-center">
@@ -236,8 +201,7 @@
                     <span class="col section-header-text text-uppercase text-start">Варианты оплаты</span>
                 </div>
 
-                <div class="row">
-                    
+                <div class="row d-flex flex-column flex-lg-row">
                     <div class="col pmnt-item-wrapper d-flex flex-column text-center">
                         <div class="pmnt-item-icon align-self-center">
                             <img src="image/payment-card.svg" height="100%">
@@ -319,7 +283,7 @@
                         </div>
                     </div>
 
-                    <div class="col-6 d-flex flex-column align-self-end">
+                    <div class="col-6 d-flex flex-column align-self-end project-big-image-wrapper">
                         <div class="project-big-image">
                             <img class="rounded" id="project-image" src="image/our-project-1.png">
                         </div>
@@ -331,7 +295,7 @@
                         </div>
                     </div>
 
-                    <div class="col d-flex flex-column align-self-end">
+                    <div class="col d-none d-lg-flex flex-column align-self-end">
                         <div class="project-small-image align-self-end">
                             <img class="rounded" id="project-small-image" src="image/our-project-1.png">
                         </div>
@@ -354,12 +318,12 @@
         <!-- Section 6 start !-->
         <section id="section-6">
             <div class="container">
-                <div class="row d-flex flex-row">
+                <div class="row d-flex flex-column flex-lg-row">
                     <div class="col-5">
                         <div class="row contact-form-header-text text-uppercase">Заполните форму<br> и мы вам перезвоним!</div>
                         <div class="row contact-form-description-text">Наш сотрудник перезвонит <br>вам в течении 24-ёх часов</div>
                     </div>
-                    <div class="col">
+                    <div class="col form-wrapper">
                         <form action="#">
                             <div class="row contact-form-input-text">
                                 <input type="text" placeholder="Имя">
@@ -387,7 +351,7 @@
     <!-- Footer start !-->
     <footer>
         <div class="container">
-            <div class="row">
+            <div class="row d-flex flex-column flex-lg-row">
                 <div class="col-5 text-start">
                     <div class="row ">
                         <div class="col footer_header_text text-uppercase">Наш адрес:</div>
@@ -411,18 +375,18 @@
                         <div class="col footer_description_text text-uppercase">+7 (903) 336 - 89 - 13</div>
                     </div>
                     <div class="row footer_header_text">
-                        <div class="col-1 ">
+                        <div class="col-1 footer-icon">
                             <img src="image/whatsapp-icon.png" class="">
                         </div>
-                        <div class="col-1">
+                        <div class="col-1 footer-icon">
                             <img src="image/vk-icon.png" class="">
                         </div>
-                        <div class="col-1">
+                        <div class="col-1 footer-icon">
                             <img src="image/telegram-icon.png" class="">
                         </div>   
                     </div>
                 </div>
-                <div class="col text-end">
+                <div class="col footer-image text-start text-lg-end">
                     <img src="image/image 171.png" alt="">
                 </div>
             </div>
