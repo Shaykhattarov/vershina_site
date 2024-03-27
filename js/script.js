@@ -1,11 +1,16 @@
 /** HEADER. BURGER MENU (adaptive) **/
 
 const burger_bar = document.getElementById('burger-bar');
+const burger_menu = document.getElementById('section-menu');
+const burger_cross = document.getElementById('burger-cross');
 
 burger_bar.addEventListener('click', function() {
-    
+    burger_menu.style.display = 'flex';
 });
 
+burger_cross.addEventListener('click', function() {
+    burger_menu.style.display = 'none';
+});
 
 /** SECTION 3. Types of houses **/
 

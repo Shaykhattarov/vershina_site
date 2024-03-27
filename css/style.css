@@ -15,6 +15,7 @@
 body {
     font-family: 'Montserrat';
     color: black;
+    list-style-type: none;
 }
 
 header, footer, section {
@@ -68,8 +69,8 @@ header {
 }
 
 .nav-burger-menu-icon-button {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     background-color: white;
     text-align: center;
     border: 0;
@@ -78,8 +79,57 @@ header {
     width: 100%;
     height: 100%;
     background-color: white;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
+
+#section-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    opacity: 0.95;
+    z-index: 999999;
+    top: 0; bottom: 0; left: 0; right: 0;
+    display: none;
+    flex-direction: column;
+    padding: 100px 40px;
+}
+#section-menu ul {
+    display: inherit;
+    flex-direction: column;
+    row-gap: 50px;
+    list-style-type: none;
+}
+#section-menu ul li {
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+#section-menu ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.menu-cross {
+    display: inherit;
+    position: absolute;
+    width: 50px; 
+    height: 50px;
+
+    top: 80px;
+    right: 50px;
+}
+.menu-cross button {
+    width: 100%;
+    height: 100%;
+
+    background-color: inherit;
+    border: 0;
+}
+
+
 
 /** SECTION 1. START BLOCK **/
 
@@ -824,5 +874,143 @@ footer {
 
 
 @media (min-width: 576px) and (max-width: 768px) {
+    section {
+        padding-bottom: 0;
+    }
 
+    .section-header-text {
+        padding-top: 25px;
+        padding-bottom: 20px;
+        font-size: 2.5rem;
+    }
+
+
+    /** SECTION 1 **/
+
+    .strt-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .strt-header-wrapper {
+        display: inherit;
+        flex-direction: row;
+        width: 100%;
+    }
+    .strt-header {
+        width: 100%;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .strt-description {
+        width: 100%;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    .strt-description br{
+        display: none;
+    }
+    .strt-image-wrap {
+        width: 100%;
+        height: 350px;
+    }
+    .strt-circle-wrap {
+        display: none;
+    }
+
+
+    /** SECTION 2 **/
+
+    .about-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-text-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-numeric-text {
+        font-size: 2.4rem;
+    }
+    .about-numeric-small-text {
+        font-size: 0.9rem;
+    }
+    .about-description-wrapper {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .about-numeric-wrapper {
+        padding-bottom: 20px;
+    }
+
+
+    /** SECTION 3 **/
+    
+    .ht-row {
+        padding-bottom: 10px;
+    }
+    .ht-header-text {
+        font-size: 1.6rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .ht-description-text {
+        font-size: 0.9rem;
+    }
+    .ht-price-text {
+        width: fit-content;
+        font-size: 0.8rem;
+    }
+    .ht-gallery-wrapper {
+        width: 80%;
+        height: 240px;
+    }
+    .hometype-gallery-wrapper {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+
+    /** SECTION 4 **/
+    
+    .pmnt-item-wrapper {
+        margin: 0;
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    /** SECTION 5 **/
+
+    .project-small-image-wrapper {
+        display: none;
+    }
+    .project-big-image-wrapper {
+        width: 80%;
+    }
+    .project-big-image {
+        width: 100%;
+        height: 320px;
+    }
+    .project-header-text {
+        font-size: 1.3rem;
+    }
+    .project-description-text {
+        font-size: 0.9rem;
+    }
+
+    /** SECTION 6 **/
+
+    .form-wrapper {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /** FOOTER **/
+
+    .footer-image {
+        margin-top: 20px;
+    }
+
+    .footer-icon {
+        margin-left: 10px;
+    }
 }
