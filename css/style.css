@@ -12,6 +12,10 @@
     --color1: black; 
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: 'Montserrat';
     color: black;
@@ -48,7 +52,7 @@ header {
 }
 
 .btn-buy:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .nav-menu {
@@ -100,7 +104,7 @@ header {
     row-gap: 50px;
     list-style-type: none;
 }
-#section-menu ul li {
+#section-menu ul li a{
     width: fit-content;
     font-weight: 400;
     font-size: 1.4rem;
@@ -108,10 +112,14 @@ header {
     text-decoration: none;
     transition: 0.3s all;
 }
-#section-menu ul li:hover {
+#section-menu ul li a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
+#section-menu ul li a {
+    color: black;
+}
+
 .menu-cross {
     display: inherit;
     position: absolute;
@@ -490,6 +498,11 @@ footer {
 
 .footer_block_margin {
     margin-bottom: 20px;
+}
+
+.footer-image div{
+    width: 610px;
+    height: 243px;
 }
 
 
@@ -1007,7 +1020,11 @@ footer {
     /** FOOTER **/
 
     .footer-image {
+        width: 95%;
         margin-top: 20px;
+    }
+    .footer-image img {
+        width: 100%;
     }
 
     .footer-icon {

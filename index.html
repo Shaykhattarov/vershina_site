@@ -27,24 +27,34 @@
                 </div>
                 <div class="col text-end nav-burger-menu-icon-wrap d-lg-none">
                     <button class="nav-burger-menu-icon-button" id="burger-bar">
-                        <img src="image/burger-bar.png">
+                        <img src="image/icons/burger-bar.png">
                     </button>
                 </div>
             </div>
         </div>
     </header>
 
-    <div id="section-menu">
+    <div id="section-menu" onclick="close_burger_menu();">
         <ul>
-            <li>О компании</li>
-            <li>Виды домов</li>
-            <li>Варианты оплаты</li>
-            <li>Наши проекты</li>
-            <li>Контакты</li>
+            <li>
+                <a href="#section-2">О компании</a>
+            </li>
+            <li>
+                <a href="#section-3">Виды домов</a>
+            </li>
+            <li>
+                <a href="#section-4">Варианты оплаты</a>
+            </li>
+            <li>
+                <a href="#section-5">Наши проекты</a>
+            </li>
+            <li>
+                <a href="#section-6">Контакты</a>
+            </li>
         </ul>
         <div class="menu-cross">
             <button id="burger-cross">
-                <img src="image/cross.svg" width="100%">
+                <img src="image/icons/cross.svg" width="100%">
             </button>
         </div>
     </div>
@@ -83,16 +93,16 @@
                 <div class="row about-text-wrapper">
                     <div class="col-5 about-description-wrapper">
                         <span class="about-numeric-small-text">
-                            Доверьтесь нам, и ваш дом станет<br>
-                            выражением вашего стиля и комфорта. <br>
-                            Доверьтесь нам, и ваш дом станет<br> 
-                            выражением вашего стиля и комфорта.<br>  
-                            Доверьтесь нам, и ваш дом станет<br>
-                            выражением вашего стиля и комфорта.
+                            Мы гарантируем высокий уровень строительства и использование только качественных материалов.<br>
+                            Благодаря нашему опыту и профессионализму, <br>
+                            мы уверены в качестве наших проектов и готовы предоставить гарантию на все выполненные работы.<br>
+                            Наши проекты охватывают различные типы зданий, <br>
+                            включая жилые дома, коттеджи, многоэтажные здания, <br>
+                            а также бани и беседки.
                         </span>
                     </div>
                     <div class="col about-numeric-wrapper text-start align-self-center">
-                        <div class="about-numeric-text text-uppercase ">10 лет</div>
+                        <div class="about-numeric-text text-uppercase ">10+ лет</div>
                         <div class="about-numeric-small-text ">опыта в строительстве</div>
                     </div>
                     <div class="col about-numeric-wrapper text-start align-self-center">
@@ -120,14 +130,18 @@
                     <div class="col">
                         <div class="row hometype-gallery-wrapper">
                             <button class="col-1 ht-glr-back" id="ht-left-arrow-1" onclick="define_gallery_event('left', 1);">
-                                <img src="image/arrow.svg">
+                                <img src="image/icons/arrow.svg">
                             </button>
                             <div class="col-9 d-flex ht-gallery-wrapper align-self-center text-center" id="ht-gallery-1">
-                                <img class="ht-gallery-item rounded" id="ht-item" src="image/hometype-1.png" width="100%">                       
-                                <img class="ht-gallery-item rounded deactivate" id="ht-item" src="image/hometype-2.png" width="100%">
+                                <img class="ht-gallery-item rounded" id="ht-item" src="image/brick-house-main.png" width="100%">                       
+                                <img class="ht-gallery-item rounded deactivate" id="ht-item" src="image/brick-house(1).jpg" width="100%">
+                                <img class="ht-gallery-item rounded deactivate" id="ht-item" src="image/brick-house(2).jpg" width="100%">
+                                <img class="ht-gallery-item rounded deactivate" id="ht-item" src="image/brick-house(3).jpg" width="100%">
+                                <img class="ht-gallery-item rounded deactivate" id="ht-item" src="image/brick-house(4).jpg" width="100%">
+                                <img class="ht-gallery-item rounded deactivate" id="ht-item" src="image/brick-house(5).jpg" width="100%">
                             </div>
                             <button class="col-1 ht-glr-next" id="ht-right-arrow-1" onclick="define_gallery_event('right', 1);">
-                                <img src="image/arrow.svg">
+                                <img src="image/icons/arrow.svg">
                             </button>
                         </div>
                         <div class="row">
@@ -140,16 +154,14 @@
                         </div>
                         <div class="row">
                             <div class="col-8 ht-description-text">
-                                Доверьтесь нам, и ваш дом станет выражением
-                                вашего стиля и комфорта. Доверьтесь нам, и 
-                                ваш дом станет выражением вашего стиля и 
-                                комфорта. Доверьтесь нам, и ваш дом станет
-                                выражением вашего стиля и комфорта.
+                                Кирпичный дом – это классический символ прочности и надежности. 
+                                Веками кирпич был основным строительным материалом, который придавал зданиям устойчивость и элегантность. 
+                                Кирпичные дома имеют множество преимуществ: они надежны, огнеустойчивы, шумоизолирующие, энергоэффективные и долговечные.
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-3 ht-price-text border border-2 border-dark text-center text-uppercase">
-                                15.000 ₽ за кв.м
+                                25 000 ₽ за кв.м
                             </div>
                         </div>
                     </div>
@@ -160,14 +172,14 @@
                     <div class="col">
                         <div class="row hometype-gallery-wrapper">
                             <button class="col-1 ht-glr-back" id="ht-left-arrow-2" onclick="define_gallery_event('left', 2);">
-                                <img src="image/arrow.svg">
+                                <img src="image/icons/arrow.svg">
                             </button>
                             <div class="col-9 d-flex ht-gallery-wrapper align-self-center text-center" id="ht-gallery-2">
                                 <img class="ht-gallery-item rounded" id="ht-item" src="image/hometype-1.png" width="100%">                       
                                 <img class="ht-gallery-item rounded deactivate" id="ht-item" src="image/hometype-2.png" width="100%">
                             </div>
                             <button class="col-1 ht-glr-next" id="ht-right-arrow-2" onclick="define_gallery_event('right', 2);">
-                                <img src="image/arrow.svg">
+                                <img src="image/icons/arrow.svg">
                             </button>
                         </div>
                         <div class="row">
@@ -181,16 +193,55 @@
                         </div>
                         <div class="row">
                             <div class="col-8 ht-description-text">
-                                Доверьтесь нам, и ваш дом станет выражением
-                                вашего стиля и комфорта. Доверьтесь нам, и 
-                                ваш дом станет выражением вашего стиля и 
-                                комфорта. Доверьтесь нам, и ваш дом станет
-                                выражением вашего стиля и комфорта.
+                                Каркасный дом – инновационный и эффективный подход к строительству, который приобретает все большую популярность. 
+                                Он представляет собой здание, основанное на прочной каркасе из деревянных или металлических элементов.
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-3 ht-price-text border border-2 border-dark text-center text-uppercase">
                                 20.000 ₽ за кв.м
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block !-->
+                <div class="row ht-row flex-column-reverse flex-lg-row deactivate" id="hometype-element" style="padding-top: 0;">
+                    <div class="col">
+                        <div class="row hometype-gallery-wrapper">
+                            <button class="col-1 ht-glr-back" id="ht-left-arrow-1" onclick="define_gallery_event('left', 1);">
+                                <img src="image/icons/arrow.svg">
+                            </button>
+                            <div class="col-9 d-flex ht-gallery-wrapper align-self-center text-center" id="ht-gallery-1">
+                                <img class="ht-gallery-item rounded" id="ht-item" src="image/brick-house-main.png" width="100%">                       
+                                <img class="ht-gallery-item rounded deactivate" id="ht-item" src="image/brick-house(1).jpg" width="100%">
+                                <img class="ht-gallery-item rounded deactivate" id="ht-item" src="image/brick-house(2).jpg" width="100%">
+                                <img class="ht-gallery-item rounded deactivate" id="ht-item" src="image/brick-house(3).jpg" width="100%">
+                                <img class="ht-gallery-item rounded deactivate" id="ht-item" src="image/brick-house(4).jpg" width="100%">
+                                <img class="ht-gallery-item rounded deactivate" id="ht-item" src="image/brick-house(5).jpg" width="100%">
+                            </div>
+                            <button class="col-1 ht-glr-next" id="ht-right-arrow-1" onclick="define_gallery_event('right', 1);">
+                                <img src="image/icons/arrow.svg">
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 text-center"></div>
+                        </div>
+                    </div>
+                    <div class="col align-self-center">
+                        <div class="row">
+                            <div class="col text-start ht-header-text text-uppercase">Кирпичный дом</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8 ht-description-text">
+                                Кирпичный дом – это классический символ прочности и надежности. 
+                                Веками кирпич был основным строительным материалом, который придавал зданиям устойчивость и элегантность. 
+                                Кирпичные дома имеют множество преимуществ: они надежны, огнеустойчивы, шумоизолирующие, энергоэффективные и долговечные.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 ht-price-text border border-2 border-dark text-center text-uppercase">
+                                25 000 ₽ за кв.м
                             </div>
                         </div>
                     </div>
@@ -269,7 +320,7 @@
 
                 <div class="row d-flex flex-row">
                     <button class="col-1 ht-glr-back" id="project-left-arrow">
-                        <img src="image/arrow.svg">
+                        <img src="image/icons/arrow.svg">
                     </button>
 
                     <!-- Gallery Items !-->
@@ -321,7 +372,7 @@
                     </div>
 
                     <button class="col-1 ht-glr-next" id="project-right-arrow">
-                        <img src="image/arrow.svg">
+                        <img src="image/icons/arrow.svg">
                     </button>
                 </div>
             </div>
@@ -332,7 +383,7 @@
         <section id="section-6">
             <div class="container">
                 <div class="row d-flex flex-column flex-lg-row">
-                    <div class="col-5">
+                    <div class="col col-md-5">
                         <div class="row contact-form-header-text text-uppercase">Заполните форму<br> и мы вам перезвоним!</div>
                         <div class="row contact-form-description-text">Наш сотрудник перезвонит <br>вам в течении 24-ёх часов</div>
                     </div>
@@ -365,17 +416,16 @@
     <footer>
         <div class="container">
             <div class="row d-flex flex-column flex-lg-row">
-                <div class="col-5 text-start">
+                <div class="col col-md-5 text-start">
                     <div class="row ">
                         <div class="col footer_header_text text-uppercase">Наш адрес:</div>
                     </div>
                     <div class="row footer_block_margin">
                         <div class="col-1 text-center align-items-center justify-content-center">
-                            <img src="image/geo-icon.png" class="img-responsive" alt="Responsive image"/>
+                            <img src="image/icons/geo-icon.png" class="img-responsive" alt="Responsive image"/>
                         </div>
-                        <div class="col-7 footer_description_text text-start text-uppercase">
-                            г. Ульяновск, Московское
-                            шоссе 13 этаж 2
+                        <div class="col col-md-7 footer_description_text text-start text-uppercase">
+                            г. Ульяновск, ул. Юности, 5
                         </div>
                     </div>
                     <div class="row">
@@ -383,24 +433,34 @@
                     </div>
                     <div class="row footer_block_margin">
                         <div class="col-1 text-center align-items-center justify-content-center">
-                            <img src="image/phone-icon.png" class="img-responsive" alt="Responsive image"/>
+                            <img src="image/icons/phone-icon.png" class="img-responsive" alt="Responsive image"/>
                         </div>
-                        <div class="col footer_description_text text-uppercase">+7 (903) 336 - 89 - 13</div>
+                        <div class="col footer_description_text text-uppercase">+7 (927) 833 - 69 - 33</div>
                     </div>
                     <div class="row footer_header_text">
                         <div class="col-1 footer-icon">
-                            <img src="image/whatsapp-icon.png" class="">
+                            <a href="#">
+                                <img src="image/icons/whatsapp-icon.png" class="">
+                            </a>
                         </div>
                         <div class="col-1 footer-icon">
-                            <img src="image/vk-icon.png" class="">
+                            <a href="#">
+                                <img src="image/icons/vk-icon.png" class="">
+                            </a>
                         </div>
                         <div class="col-1 footer-icon">
-                            <img src="image/telegram-icon.png" class="">
+                            <a href="#">
+                                <img src="image/icons/telegram-icon.png" class="">
+                            </a>
                         </div>   
                     </div>
                 </div>
                 <div class="col footer-image text-start text-lg-end">
-                    <img src="image/image 171.png" alt="">
+                    <div style="position:relative;overflow:hidden;width: 100%;">
+                        <a href="https://yandex.ru/maps/195/ulyanovsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ульяновск</a>
+                        <a href="https://yandex.ru/maps/195/ulyanovsk/house/ulitsa_yunosti_5/YEEYdQFkTkYPQFtufX90cn9hZw==/?ll=48.364738%2C54.353323&utm_medium=mapframe&utm_source=maps&z=16.63" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Юности, 5 — Яндекс Карты</a>
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=48.364738%2C54.353323&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNjEyNDEyODE5EjzQoNC-0YHRgdC40Y8sINCj0LvRjNGP0L3QvtCy0YHQuiwg0YPQu9C40YbQsCDQrtC90L7RgdGC0LgsIDUiCg19dUFCFc5pWUI%2C&z=16.63"  width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -409,8 +469,6 @@
 
     <!-- Scripts start !-->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/lightgallery.min.js"></script>
-    <script src="js/anime.min.js"></script>
     <script src="js/script.js"></script>
     <!-- Scripts end !-->
 </body>

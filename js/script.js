@@ -12,11 +12,32 @@ burger_cross.addEventListener('click', function() {
     burger_menu.style.display = 'none';
 });
 
+function close_burger_menu() {
+    burger_menu.style.display = 'none';
+}
+
 /** SECTION 3. Types of houses **/
 
 const hometype_view_elements_button = document.getElementById('hometype-view-elements');
 const hometype_element_container = document.getElementById('hometype-element-container');
 let hometype_index = 2; // Number of viewing blocks
+
+function check_hometypes_elements_activates() {
+    let buffer = Array.from(hometype_element_container.children);
+    let all_viewed = true;
+
+    for (const [index] of buffer.entries()) {
+        if (buffer[index].id == "hometype-element") {
+            if (buffer[index].className.match('deactivate') != null) {
+                all_viewed = false;
+            } 
+        }
+    }
+
+    if (all_viewed) {
+        hometype_view_elements_button.style.display = "none";
+    }
+}
 
 hometype_view_elements_button.addEventListener('click', function () {
 
@@ -26,28 +47,16 @@ hometype_view_elements_button.addEventListener('click', function () {
         Если все блоки отображены убираем кнопку.
     **/
     let buffer = Array.from(hometype_element_container.children);
-    let container = [];
-    let active = true;
-    let viewing_blocks_count = 0;
 
-    buffer.forEach((elem) => {
-        if (elem.id == "hometype-element") {
-            container.add(elem);
-        }   
-    });
-
-    hometype_index += 2;
-
-    container.forEach((elem, index) => {
-        elem.classList.forEach((cls) => {
-            if (cls == 'deactivate') {
-                active = false;
-            }
-        });
-
-        
-    });
-
+    for (const [index] of buffer.entries()) {
+        if (buffer[index].id == "hometype-element") {
+            if (buffer[index].className.match('deactivate') != null) {
+                buffer[index].classList.remove("deactivate");
+                check_hometypes_elements_activates();
+                break;
+            } 
+        }
+    }
 });
 
 function define_gallery_event(type, id) {
@@ -64,7 +73,6 @@ function define_gallery_event(type, id) {
 
         if (active_old_index == 0) {
             items[items.length - 1].classList.remove("deactivate");
-            //console.log(items[items.length - 1]);
         }
         else {
             items[active_old_index - 1].classList.remove("deactivate");
