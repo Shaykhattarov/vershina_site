@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /** Load from buffer gallery items and change gallery values **/
     project_buffer_items = Array.from(project_gallery_buffer.children);
-    console.log(project_buffer_items);
+    //console.log(project_buffer_items);
     project_buffer_item = project_buffer_items[0];
     project_buffer_small_item = project_buffer_items[1];
     change_project_gallery_items(project_buffer_item, project_buffer_small_item);
