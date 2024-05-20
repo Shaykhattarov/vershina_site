@@ -1,0 +1,3 @@
+Sitemap: https://vershina-ul.ru/sitemap.xml
+User-agent: *
+Allow: https://vershina-ul.ru
