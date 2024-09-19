@@ -1031,3 +1031,159 @@ footer {
         margin-left: 10px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 576px) {
+    section {
+        padding-bottom: 0;
+    }
+
+    .section-header-text {
+        padding-top: 25px;
+        padding-bottom: 20px;
+        font-size: 2rem;
+    }
+
+
+    /** SECTION 1 **/
+
+    .strt-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .strt-header-wrapper {
+        display: inherit;
+        flex-direction: row;
+        width: 100%;
+    }
+    .strt-header {
+        width: 100%;
+        text-align: center;
+        font-size: 2.15rem;
+    }
+    .strt-description {
+        width: 100%;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    .strt-description br{
+        display: none;
+    }
+    .strt-image-wrap {
+        width: 100%;
+        height: 350px;
+    }
+    .strt-circle-wrap {
+        display: none;
+    }
+
+
+    /** SECTION 2 **/
+
+    .about-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-text-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-numeric-text {
+        font-size: 1.9rem;
+    }
+    .about-numeric-small-text {
+        font-size: 0.9rem;
+    }
+    .about-description-wrapper {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .about-numeric-wrapper {
+        padding-bottom: 20px;
+    }
+
+
+    /** SECTION 3 **/
+    
+    .ht-row {
+        padding-bottom: 10px;
+    }
+    .ht-header-text {
+        font-size: 1.6rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .ht-description-text {
+        font-size: 0.9rem;
+    }
+    .ht-price-text {
+        width: fit-content;
+        font-size: 0.8rem;
+    }
+    .ht-gallery-wrapper {
+        width: 80%;
+        height: 240px;
+    }
+    .hometype-gallery-wrapper {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+
+    /** SECTION 4 **/
+    
+    .pmnt-item-wrapper {
+        margin: 0;
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    /** SECTION 5 **/
+
+    .project-small-image-wrapper {
+        display: none;
+    }
+    .project-big-image-wrapper {
+        width: 80%;
+    }
+    .project-big-image {
+        width: 100%;
+        height: 240px;
+    }
+
+    
+    .ht-glr-back {
+        height: 260px;
+    }
+
+    .ht-glr-next {
+        height: 260px;
+    }
+
+    .project-header-text {
+        font-size: 1.3rem;
+    }
+    .project-description-text {
+        font-size: 0.9rem;
+    }
+
+    /** SECTION 6 **/
+
+    .form-wrapper {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /** FOOTER **/
+
+    .footer-image {
+        width: 95%;
+        margin-top: 20px;
+    }
+    .footer-image img {
+        width: 100%;
+    }
+
+    .footer-icon {
+        margin-left: 10px;
+    }
+}
